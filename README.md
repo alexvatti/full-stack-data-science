@@ -15,4 +15,39 @@ Want to become a data scientist? These below-mentioned skills will help you to g
    
  - BI Tools - Power BI / Tableau
 
+Skills
+ - Data Science
+ - Machine Learning
+ - Deep Learning
+ - Python
+ - Statistics
+ - EDA
+ - MySQL
+ - Power BI
+ - MLOPS
+
+
+Structured approach for learning Data Science (DS), Machine Learning (ML), Data Analysis (DA), and Deep Learning (DL) as per my view.
+
+
+PART-1/A: Understanding Concepts & Logic
+
+1. Gain a solid understanding of fundamental concepts and logic.
+2. Develop problem-solving skills.
+3. Enhance communication and presentation skills.
+4. Practice solving problems on paper to reinforce understanding.
+
+PART-2/B: Learning Programming Language
+
+1. Learn the syntax and basics of a programming language.
+2. Avoid relying solely on the web or ChatGPT; actively write code and learn through practice.
+3. Develop the ability to convert problems into step-by-step solutions.
+4. Expand programming skills progressively.
+
+PART-3/C: Showcasing Knowledge and Experience
+
+1. Showcase your knowledge, exposure, and skills.
+2. Work on practical projects to gain hands-on experience.
+3. Explore how acquired skills can be applied to solve real-world business problems.
+4. Consider how to monetize your skills and manage associated risks.
 
