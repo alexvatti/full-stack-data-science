@@ -1,0 +1,15 @@
+age,income,student,credit_rating,buy
+Youth,High,No,Fair,No
+Youth,High,No,Excellent,No
+Middle ,High,No,Fair,Yes
+Senior,Medium,No,Fair,Yes
+Senior,Low,Yes,Fair,Yes
+Senior,Low,Yes,Excellent,No
+Middle ,Low,Yes,Excellent,Yes
+Youth,High,No,Fair,No
+Youth,Low,Yes,Fair,Yes
+Senior,Medium,Yes,Fair,Yes
+Youth,Medium,Yes,Excellent,Yes
+Middle ,High,No,Excellent,Yes
+Middle ,High,Yes,Fair,Yes
+Senior,High,No,Excellent,No
