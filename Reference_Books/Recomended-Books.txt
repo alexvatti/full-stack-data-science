@@ -1,0 +1,17 @@
+1. Learning Python 5ed: Powerful Object-Oriented Programming  by Mark Lutz
+
+2. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython  by Wes McKinney 
+
+3. Think Stats: Exploratory Data Analysis 2nd Edition, Kindle Edition  by by Allen B. Downey
+
+4. Introduction to Linear Algebra by Gilbert Strang
+
+5. Convex Optimization Hardcover – by Stephen Boyd 
+
+6. Pattern Recognition and Machine Learning (Information Science and Statistics) by Christopher M. Bishop (Author)
+
+7. Deep Learning (Adaptive Computation and Machine Learning series) - by Ian Goodfellow 
+
+8. OpenIntro Statistics
+
+9. Statistical Programming With Python
