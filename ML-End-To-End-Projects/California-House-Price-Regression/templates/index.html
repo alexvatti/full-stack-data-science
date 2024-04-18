@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+</head>
+<body>
+    <div class="login">
+        <div class="left-pane">
+            <img src="{{ saved_image }}" alt="Saved Image">
+        </div>
+        <h1>House Price Prediction Analysis</h1>
+        <!-- Main Input Form For Receiving Query to our ML Model -->
+        <form action="{{ url_for('predict')}}" method="post">
+
+	<label for="MedIncid">Enter MedInc Value(min_value=0.0,max_value=15.0,value=3.5):</label>
+	<input type="text" id="MedIncid" name="MedInc" placeholder="Enter MedInc Value(min_value=0.0,max_value=15.0,value=3.5)" required="required" /> <br><br>
+    <label for="HouseAgeId">Enter HouseAge Value (min_value=1.0,max_value=52.0,value=29.0):</label> 
+    <input type="text" id="HouseAgeId" name="HouseAge" placeholder="Enter HouseAge Value (min_value=1.0,max_value=52.0,value=29.0)" required="required" /> <br><br>
+    <label for="AveBedrmsId">Enter AveBedrms Value (min_value=0.0,max_value=34.0,value=1.0):</label> 
+    <input type="text" id="AveBedrmsId" name="AveBedrms" placeholder="Enter AveBedrms Value (min_value=0.0,max_value=34.0,value=1.0)" required="required" /> <br><br>
+    <label for="PopulationId">Enter Population Value (min_value=3,max_value=35682,value=1166):</label> 
+    <input type="text" id="PopulationId" name="Population" placeholder="Enter Population Value (min_value=3,max_value=35682,value=1166)" required="required" /> <br><br>
+    <label for="AveOccupId">Enter AveOccup Value (min_value=0.0,max_value=1243.0,value=2.8):</label>
+    <input type="text" id="AveOccupId" name="AveOccup" placeholder="Enter AveOccup Value (min_value=0.0,max_value=1243.0,value=2.8)" required="required" /> <br><br>
+
+        <button style="width: 100px; height: 60px;"> Predict</button> <br> <br>
+        </form>
+        <!-- Display Predicted Salary Text -->
+        <br>
+        <br>
+        <h1>{{ prediction_text }}</h1>
+    </div>
+</body>
+</html>
