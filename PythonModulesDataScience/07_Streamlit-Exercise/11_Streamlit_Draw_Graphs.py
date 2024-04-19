@@ -12,7 +12,7 @@ file_path=r"iris_dataset.csv"
 iris_df=pd.read_csv(file_path)
 iris_df.columns = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species_labels','species']
 
-st.header("Iris Visualiazation")
+st.header("Iris Visualization")
 # Extract the values and index from value counts
 value_counts = iris_df["species"].value_counts()
 values = value_counts.values
