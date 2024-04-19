@@ -8,8 +8,15 @@ import seaborn as sns
 
 from tabulate import tabulate
 
-file_path=r"iris_dataset.csv"
-iris_df=pd.read_csv(file_path)
+#file_path=r"iris_dataset.csv"
+#iris_df=pd.read_csv(file_path)
+url = "https://raw.githubusercontent.com/alexvatti/full-stack-data-science/main/PythonModulesDataScience/07_Streamlit-Exercise/iris_dataset.csv"
+
+# Read the CSV file into a DataFrame
+iris_df = pd.read_csv(url)
+
+# Display the DataFrame
+print(iris_df.head())
 iris_df.columns = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species_labels','species']
 
 st.header("Iris Visualization")
@@ -18,7 +25,7 @@ value_counts = iris_df["species"].value_counts()
 values = value_counts.values
 labels = value_counts.index
 cat_name="species"
-fig, axs = plt.subplots(1, 2, figsize=(12, 6))  # 1 row, 2 columns
+fig, axs = plt.subplots(1, 2, figsize=(8, 6))  # 1 row, 2 columns
 # Create a bar graph
 axs[0].bar(labels, values)
 axs[0].set_title(f'Frequency of {cat_name}')
@@ -31,7 +38,7 @@ plt.tight_layout()
 st.pyplot(fig)
 
 for con_var in ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']:
-    fig, axes = plt.subplots(1, 2, figsize=(12, 6), gridspec_kw={'width_ratios': [3, 2]})
+    fig, axes = plt.subplots(1, 2, figsize=(8, 6), gridspec_kw={'width_ratios': [3, 2]})
 
     # Plot histogram without KDE on the left
     axes[0].hist(iris_df[con_var], color='skyblue', edgecolor='black')
@@ -51,7 +58,7 @@ for con_var in ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']:
 
 sns.set_style("whitegrid")
 output_var="species"
-fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+fig, axes = plt.subplots(2, 2, figsize=(8, 6))
 fig.suptitle('Box-Plots Features Vs  Flower Type')
 cols = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
 k=0
@@ -63,7 +70,7 @@ st.pyplot(fig)
 
 
 sns.set_style("whitegrid")
-fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+fig, axes = plt.subplots(2, 2, figsize=(8, 6))
 fig.suptitle('Kde-Plots')
 k=0
 for i in range(2):
