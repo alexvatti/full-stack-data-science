@@ -6,7 +6,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from tabulate import tabulate
 
 #file_path=r"iris_dataset.csv"
 #iris_df=pd.read_csv(file_path)
