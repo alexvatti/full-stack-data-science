@@ -1,0 +1,35 @@
+1. Create SQL Table - with following data
+
+-- Create the weather table
+CREATE TABLE weather (
+    day DATE,
+    temperature FLOAT,
+    windspeed FLOAT,
+    event VARCHAR(50)
+);
+
+-- Insert data into the weather table
+INSERT INTO weather (day, temperature, windspeed, event)
+VALUES 
+    ('2017-01-01', 32.0, 6.0, 'Rain'),
+    ('2017-01-02', 35.0, 7.0, 'Sunny'),
+    ('2017-01-03', 28.0, 2.0, 'Snow'),
+    ('2017-01-04', 24.0, 7.0, 'Snow'),
+    ('2017-01-05', 32.0, 4.0, 'Rain'),
+    ('2017-01-06', 31.0, 2.0, 'Sunny');
+
+
+2. Select only - 'day','temperature' columns
+SELECT day, temperature FROM weather;
+
+3. Print Max Temp from table
+SELECT MAX(temperature) FROM weather;
+
+4. Print all record - whose temperature > 32
+SELECT * FROM weather
+WHERE temperature > 32;
+
+5. Print std Temp from table
+SELECT STD(temperature) FROM weather;
+
+

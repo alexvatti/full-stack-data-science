@@ -1,0 +1,74 @@
+1. Create SQL Table - "BirdDetails"
+
+CREATE TABLE BirdDetails (
+    bird_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    bird_name VARCHAR(50) NOT NULL,
+    age FLOAT,
+    visits INT,
+    priority VARCHAR(3)
+);
+
+INSERT INTO BirdDetails (bird_name, age, visits, priority) VALUES
+    ('Cranes', 3.5, 2, 'yes'),
+    ('Cranes', 4, 4, 'yes'),
+    ('plovers', 1.5, 3, 'no'),
+    ('spoonbills', NULL, 4, 'yes'), -- assuming np.nan is equivalent to NULL in SQL
+    ('spoonbills', 6, 3, 'no'),
+    ('Cranes', 3, 4, 'no'),
+    ('plovers', 5.5, 2, 'no'),
+    ('Cranes', NULL, 2, 'yes'), -- assuming np.nan is equivalent to NULL in SQL
+    ('spoonbills', 8, 3, 'no'),
+    ('spoonbills', 4, 2, 'no');
+
+
+2. Print all the rows with only 'birds' and 'age' columns from the dataframe
+SELECT bird_name , age  FROM BirdDetails;
+
+
+3. select the rows where the number of visits is less than 4
+SELECT *  FROM BirdDetails
+WHERE visits < 4;
+
+4. select the rows with columns ['birds', 'visits'] where the age is missing i.e NaN
+SELECT bird_name , visits FROM BirdDetails
+WHERE age is NULL;
+
+
+5. Select the rows where the birds is a Cranes and the age is less than 4
+SELECT *  FROM BirdDetails
+WHERE bird_name='Cranes' and age <4;
+
+
+6. Select the rows the age is between 2 and 4(inclusive)
+SELECT * From BirdDetails
+WHERE age >=2 and age <=4; 
+
+
+7. Find the total number of visits of the bird Cranes
+SELECT SUM(Visits) From BirdDetails
+WHERE bird_name='Cranes';
+
+
+8. Calculate the mean age for each different birds in dataframe.
+SELECT bird_name, avg(age) From BirdDetails
+GROUP BY bird_name;
+
+9. Find the number of each type of birds in dataframe (Counts)
+SELECT bird_name,COUNT(bird_name) FROM BirdDetails
+GROUP BY bird_name;
+
+
+
+10. Sort dataframe (birds) first by the values in the 'age' in decending order, then by the value in the 'visits' column in ascending order.
+SELECT * FROM BirdDetails
+ORDER BY age DESC,  visits ASC;
+
+
+
+11.Replace the priority column values with'yes' should be 1 and 'no' should be 0
+
+
+12. In the 'birds' column, change the 'Cranes' entries to 'trumpeters'.
+UPDATE BirdDetails
+SET bird_name='trumpeters'
+WHERE bird_name='Cranes'
