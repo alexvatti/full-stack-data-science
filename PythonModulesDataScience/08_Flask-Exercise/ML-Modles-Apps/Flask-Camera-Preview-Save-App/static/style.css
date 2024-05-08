@@ -1,0 +1,23 @@
+.control-button {
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+    background-color: #008CBA;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.left-pane, .right-pane, .center-pane {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
