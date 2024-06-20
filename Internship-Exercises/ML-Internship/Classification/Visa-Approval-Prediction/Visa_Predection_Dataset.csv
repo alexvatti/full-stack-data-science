@@ -1,28 +1,28 @@
 case_id,continent,education_of_employee,has_job_experience,requires_job_training,no_of_employees,yr_of_estab,region_of_employment,prevailing_wage,unit_of_wage,full_time_position,case_status
-EZYV01,Asia,High School,N,N,14513,2007,West,592.2029,Hour,Y,Denied
+EZYV01,Asia,HighSchool,N,N,14513,2007,West,592.2029,Hour,Y,Denied
 EZYV02,Asia,Master's,Y,N,2412,2002,Northeast,83425.65,Year,Y,Certified
 EZYV03,Asia,Bachelor's,N,Y,44444,2008,West,122996.86,Year,Y,Denied
 EZYV04,Asia,Bachelor's,N,N,98,1897,West,83434.03,Year,Y,Denied
 EZYV05,Africa,Master's,Y,N,1082,2005,South,149907.39,Year,Y,Certified
 EZYV06,Asia,Master's,Y,N,2339,2012,South,78252.14,Year,Y,Certified
 EZYV07,Asia,Bachelor's,N,N,4985,1994,South,53635.39,Year,Y,Certified
-EZYV08,North America,Bachelor's,Y,N,3035,1924,West,418.2298,Hour,Y,Denied
+EZYV08,NorthAmerica,Bachelor's,Y,N,3035,1924,West,418.2298,Hour,Y,Denied
 EZYV09,Asia,Bachelor's,N,N,4810,2012,Midwest,74362.19,Year,Y,Certified
 EZYV10,Europe,Doctorate,Y,N,2251,1995,South,67514.76,Year,Y,Certified
 EZYV11,Asia,Master's,N,N,2465,2004,Midwest,83588.56,Year,Y,Certified
-EZYV12,Asia,High School,Y,N,4069,2005,Northeast,70813.09,Year,Y,Denied
+EZYV12,Asia,HighSchool,Y,N,4069,2005,Northeast,70813.09,Year,Y,Denied
 EZYV13,Asia,Bachelor's,Y,N,123876,1963,Northeast,28663.05,Year,Y,Certified
 EZYV14,Asia,Bachelor's,Y,N,1652,2007,Midwest,107196.03,Year,Y,Certified
 EZYV15,Asia,Master's,Y,Y,15756,2006,South,220081.73,Year,Y,Certified
-EZYV16,Asia,High School,Y,N,4897,1987,West,74108.02,Year,Y,Denied
+EZYV16,Asia,HighSchool,Y,N,4897,1987,West,74108.02,Year,Y,Denied
 EZYV17,Europe,Master's,Y,N,76638,1991,Midwest,3706.79,Year,Y,Certified
 EZYV18,Asia,Master's,Y,N,2747,2001,West,16132.61,Year,Y,Certified
 EZYV19,Africa,Master's,Y,N,4743,2004,Midwest,150441.13,Year,Y,Certified
 EZYV20,Asia,Doctorate,N,N,843,1972,Midwest,79948.12,Year,Y,Certified
 EZYV21,Asia,Master's,N,N,880,2008,West,71128.98,Year,Y,Denied
-EZYV22,North America,Master's,Y,N,1706,2013,Midwest,137694.98,Year,N,Certified
+EZYV22,NorthAmerica,Master's,Y,N,1706,2013,Midwest,137694.98,Year,N,Certified
 EZYV23,Asia,Master's,Y,N,2878,1968,West,45642.39,Year,Y,Certified
-EZYV24,North America,High School,N,N,1517,1884,Midwest,90108.38,Year,N,Certified
+EZYV24,NorthAmerica,HighSchool,N,N,1517,1884,Midwest,90108.38,Year,N,Certified
 EZYV25,Europe,Doctorate,Y,N,241,1981,Midwest,71286.04,Year,Y,Certified
 EZYV26,North America,Master's,N,N,1100,1997,Midwest,99489.65,Year,Y,Certified
 EZYV27,Asia,Bachelor's,Y,N,756,1995,South,86332.95,Year,Y,Certified
